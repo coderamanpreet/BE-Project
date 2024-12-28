@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
+
+
+
+:root{
+
+  --black:#192a56;
+
+  --orange:#ffffff;
+
+  --yellow:#ffe5b4;
+
+}
+
+
+
+*{
+
+  font-family: 'Nunito', sans-serif;
+
+  margin:0; padding:0;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  outline: none; border:none;
+
+  text-transform: capitalize;
+
+  transition: .2s linear;
+
+}
+
+
+
+html{
+
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+
+}
+
+
+
+section{
+
+  padding:0 7%;
+
+  padding-top: 7.5rem;
+
+  padding-bottom: 3rem;
+
+  min-height: 100vh;
+
+}
+
+
+
+.btn{
+
+  display: inline-block;
+
+  margin-top: 1rem;
+
+  padding:.7rem 2.5rem;
+
+  font-size: 1.7rem;
+
+  color:var(--yellow);
+
+  border:.2rem solid var(--yellow);
+
+  cursor: pointer;
+
+  background:none;
+
+}
+
+
+
+.btn:hover{
+
+  background:var(--yellow);
+
+  color:#fff;
+
+}
+
+
+
+.heading{
+
+  text-align: center;
+
+  color:var(--black);
+
+  padding:1rem;
+
+  text-transform: uppercase;
+
+  font-size: 4.5rem;
+
+}
+
+
+
+header{
+
+  position: fixed;
+
+  top:0; left:0;
+
+  width:100%;
+
+  z-index: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding:2rem 7%;
+
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+  background:#fff;
+
+  z-index: 1000;
+
+}
+
+
+
+header .logo{
+
+  font-size: 2.5rem;
+
+  color:#666;
+
+  font-weight: bolder;
+
+}
+
+
+
+header .navbar a{
+
+  font-size: 2rem;
+
+  margin-left: 2.5rem;
+
+  color:var(--black);
+
+}
+
+
+
+header .navbar a:hover{
+
+  color:var(--orange);
+
+}
+
+
+
+#menu-bar{
+
+  font-size: 3rem;
+
+  color:var(--black);
+
+  cursor: pointer;
+
+  display: none;
+
+}
+
+
+
+.home{
+
+  display: flex;
+
+  align-items: center;
+
+  background:url(images/home-bg.jpg) no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.home .image{
+
+  padding-top: 4rem;
+
+  flex:1 1 40rem;
+
+}
+
+
+
+.home .content{
+
+  padding:1rem;
+
+  flex:1 1 40rem;
+ 
+
+}
+
+
+
+.home .content h3{
+
+  color:#fff;
+
+  font-size: 5.5rem;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.home .content p{
+
+  color:#fff;
+
+  font-size: 1.7rem;
+
+}
+
+
+
+.home .image img{
+
+  width:100%;
+
+}
+
+
+
+.home .content .btn{
+
+  color:#444;
+
+  background:#fff;
+
+}
+
+
+
+.home .content .btn:hover{
+
+  color:#fff;
+
+  background:none;
+
+  border-color: #fff;
+
+}

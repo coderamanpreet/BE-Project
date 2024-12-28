@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form action="/submit-survey" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Age Group:</label>
+                <select name="age_group" required>
+                    <option value="">Select</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46+">46+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Occupation:</label>
+                <select name="occupation" required>
+                    <option value="">Select</option>
+                    <option value="Student">Student</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How often do you use our services?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="frequency" value="Daily" required> Daily</label>
+                    <label><input type="radio" name="frequency" value="Weekly"> Weekly</label>
+                    <label><input type="radio" name="frequency" value="Monthly"> Monthly</label>
+                    <label><input type="radio" name="frequency" value="Rarely"> Rarely</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Preferred Contact Method:</label>
+                <select name="contact_method" required>
+                    <option value="">Select</option>
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Text Message">Text Message</option>
+                    <option value="Social Media">Social Media</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Which of our services are you interested in? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="services[]" value="Consulting"> Consulting</label>
+                    <label><input type="checkbox" name="services[]" value="Training"> Training</label>
+                    <label><input type="checkbox" name="services[]" value="Support"> Support</label>
+                    <label><input type="checkbox" name="services[]" value="Products"> Products</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>How satisfied are you with our service?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Which of the following do you use? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="platforms[]" value="Mobile"> Mobile</label>
+                    <label><input type="checkbox" name="platforms[]" value="Desktop"> Desktop</label>
+                    <label><input type="checkbox" name="platforms[]" value="Tablet"> Tablet</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Additional Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Write your feedback here..."></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

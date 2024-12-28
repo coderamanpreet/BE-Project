@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Randeep Singh",
+        "email": "randeepsingh@gmail.com",
+        "occupation": "Student",
+        "frequency": "Daily",
+        "contact_method": "Email",
+        "services": [
+            "Training"
+        ],
+        "satisfaction": "Satisfied",
+        "platforms": [
+            "Desktop"
+        ],
+        "feedback": "very nice "
+    },
+    {
+        "name": "Lovepreet Singh",
+        "email": "singhlovepreet@gmail.com",
+        "occupation": "Professional",
+        "frequency": "Daily",
+        "contact_method": "Text Message",
+        "services": [
+            "Products"
+        ],
+        "satisfaction": "Very Satisfied",
+        "platforms": [
+            "Mobile"
+        ],
+        "feedback": "veerji "
+    },
+    {
+        "name": "Lovepreet Singh",
+        "email": "singhlovepreet@gmail.com",
+        "occupation": "Professional",
+        "frequency": "Daily",
+        "contact_method": "Text Message",
+        "services": [
+            "Products"
+        ],
+        "satisfaction": "Very Satisfied",
+        "platforms": [
+            "Mobile"
+        ],
+        "feedback": "veerji "
+    },
+    {
+        "name": "Amanpreet Singh",
+        "email": "amanpreet@gmail.com",
+        "occupation": "Self-Employed",
+        "frequency": "Weekly",
+        "contact_method": "Phone",
+        "services": [
+            "Training"
+        ],
+        "satisfaction": "Satisfied",
+        "platforms": [
+            "Mobile"
+        ],
+        "feedback": "too good to be true "
+    },
+    {
+        "name": "Jashan Sahni",
+        "email": "sahnidahkaka@gmail.com",
+        "age_group": "18-25",
+        "occupation": "Other",
+        "frequency": "Rarely",
+        "contact_method": "Text Message",
+        "services": [
+            "Consulting"
+        ],
+        "satisfaction": "Very Satisfied",
+        "platforms": [
+            "Mobile"
+        ],
+        "feedback": "urgent required "
+    },
+    {
+        "name": "kp escapes",
+        "email": "kp@gmail.com",
+        "age_group": "26-35",
+        "occupation": "Self-Employed",
+        "frequency": "Monthly",
+        "contact_method": "Email",
+        "services": [
+            "Consulting"
+        ],
+        "satisfaction": "Very Satisfied",
+        "platforms": [
+            "Desktop"
+        ],
+        "feedback": "subscirbe to my youtbe channel"
+    },
+    {
+        "name": "Helina Obama",
+        "email": "hellina@gmail.com",
+        "age_group": "36-45",
+        "occupation": "Self-Employed",
+        "frequency": "Daily",
+        "contact_method": "Text Message",
+        "services": [
+            "Support"
+        ],
+        "satisfaction": "Very Satisfied",
+        "platforms": [
+            "Tablet"
+        ],
+        "feedback": "Good "
+    }
+]
